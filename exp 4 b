@@ -1,0 +1,33 @@
+Tiya jain 
+Entc b2
+22070123126
+
+#include<iostream>
+#include<string>
+#include<bitset>
+using namespace std;
+int main ()
+{
+  int number,i,j,k,set,reset;
+  string binary;
+
+  cout<<("Enter a number: ");
+  cin>>number;
+ binary = bitset<8>(number).to_string();
+  cout<<"\n Entered number was converted" <<number<<" the converted number is : "<<binary;
+  j|=(1<<number);
+  k&= (1<< number);
+  set = number|j;
+  reset = number&k;
+
+  cout<<"\nsSetting the bit:"<<set;
+  cout<<"\nResetting the bit:"<<reset;  
+
+}
+
+OUTPUT:
+Enter a number: 67
+
+ Entered number was converted67 the converted number is : 01000011
+sSetting the bit:75
+Resetting the bit:0
